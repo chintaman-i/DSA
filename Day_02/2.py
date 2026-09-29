@@ -28,7 +28,7 @@ for i in a:
     elif i < ssmall and i != smallest:
         ssmall = i
 
-print(largest)
-print(slargest)
-print(smallest)
-print(ssmall)
+print("Largest= ",largest)
+print("Second Largest=",slargest)
+print("smallest= ",smallest)
+print("Second smallest",ssmall)
