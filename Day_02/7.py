@@ -18,5 +18,5 @@ for i in a:
 for i in a:
     if i == 0:
         new.append(i)
-
+        
 print("After moving zeros:", new)

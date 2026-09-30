@@ -8,6 +8,6 @@ breadth=b
 for i in range(len):
     for j in range(breadth):
             print("*", end=" ")
-        else:
+    else:
             print(" ", end=" ")
     print()
