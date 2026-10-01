@@ -1,7 +1,7 @@
-# alphabet pattern
+# alphabet pattern space in between
 
 n=int(input("Enter the number of rows: "))
-#num=0
+
 
 for i in range(n):
     print(' '*(n-i-1), end='')
@@ -10,6 +10,5 @@ for i in range(n):
             print(chr(65+j), end='')
         else:
             print(' ', end='')
-        #print(chr(65+num), end='')
-        #num+=1
+        
     print()
