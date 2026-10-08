@@ -17,25 +17,7 @@ class linkedlist:
             last = last.next
         last.next = new_node
 
-    def insert(self, new_node, pos):
-        if pos == 0:
-            new_node.next = self.head
-            self.head = new_node
-            return
-        
-        p = 1
-        temp = self.head
-        while temp and p != pos - 1:
-            temp = temp.next
-            p += 1
-            
-        if temp is None:
-            print("Position out of bounds")
-            return
-
-        new_node.next = temp.next
-        temp.next = new_node
-
+   
     def delete(self, value):
         if self.head is None:
             print("List is empty")
@@ -67,7 +49,6 @@ class linkedlist:
             current = current.next
         print()
 
-# --- Test Execution ---
 list = linkedlist()
 list.append(1)
 list.append(2)
