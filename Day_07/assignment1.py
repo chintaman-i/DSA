@@ -111,23 +111,23 @@ list.append(55)
 print("Original list:")
 list.print()
 
-print("\nAfter deleting 12:")
+print("After deleting 12:")
 list.delete(12)
 list.print()
 
-print("\nAfter inserting 100 at position 1:")
+print("After inserting 100 at position 1:")
 new_node = node(100)
 list.insert(new_node, 1)
 list.print()
 
-print("\nReversed list:")
+print("Reversed list:")
 list.reverse()
 list.print()
 
 print()
 list.sum_consecutive()
 
-print("\nFinding middle node:")
+print("Finding middle node:")
 list.find_middle()
 
 
