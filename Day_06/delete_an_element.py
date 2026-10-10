@@ -42,6 +42,8 @@ class linkedlist:
 
         prev.next = temp.next
 
+    def insert 
+
     def print(self):
         current = self.head
         while current:
