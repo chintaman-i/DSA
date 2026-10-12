@@ -32,7 +32,6 @@ class linkedlist:
             prev = temp 
             temp = temp.next 
         if temp is None: 
-            # Fixed the capital 'P' typo here:
             print("Value not found") 
             return 
         prev.next = temp.next
@@ -111,23 +110,23 @@ list.append(55)
 print("Original list:")
 list.print()
 
-print("After deleting 12:")
+print("\nAfter deleting 12:")
 list.delete(12)
 list.print()
 
-print("After inserting 100 at position 1:")
+print("\nAfter inserting 100 at position 1:")
 new_node = node(100)
 list.insert(new_node, 1)
 list.print()
 
-print("Reversed list:")
+print("\nReversed list:")
 list.reverse()
 list.print()
 
-print()
+print("\nsum of consecutive numbers")
 list.sum_consecutive()
 
-print("Finding middle node:")
+print("\nFinding middle node:")
 list.find_middle()
 
 
