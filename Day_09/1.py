@@ -56,6 +56,9 @@ class linkedlist:
                 temp=self.head
                 while(p!=pos-1):
                     temp=temp.next
+                    p+=1
+                new_node.next=temp.next
+                temp.next=new_node
 
     def print(self):
         print()
