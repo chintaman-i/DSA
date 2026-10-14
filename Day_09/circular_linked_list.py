@@ -43,26 +43,24 @@ class linkedlist:
 
         prev.next = temp.next
 
-        def insert(self, new_node, pos):
-            if pos == 1:
-                temp=self.head
-                while(temp.next!=self.head):
-                    temp=temp.next
-                new_node.next=self.head
-                self.head=new_node
-                temp.next=self.head
-            else:
-                p=1
-                temp=self.head
-                while(p!=pos-1):
-                    temp=temp.next
-                    p+=1
-                new_node.next=temp.next
-                temp.next=new_node
+    def insert(self, new_node, pos):
+        if pos == 1:
+            temp=self.head
+            while(temp.next!=self.head):
+                temp=temp.next
+            new_node.next=self.head
+            self.head=new_node
+            temp.next=self.head
+        else:
+            p=1
+            temp=self.head
+            while(p!=pos-1):
+                temp=temp.next
+                p+=1
+            new_node.next=temp.next
+            temp.next=new_node
 
     def print(self):
-        print()
-        print("List of elements: ")
         temp=self.head
         while(True):
             print(temp.data,end=" ")
@@ -70,10 +68,19 @@ class linkedlist:
             if temp==self.head:
                 break
 
+
 list = linkedlist()
 list.append(node(1))
 list.append(node(2))
 list.append(node(3))
 list.append(node(44))
 list.append(node(55))
+print("Append")
+list.print()
+print("\n")
+
+list.insert(node(10), 3)
+list.insert(node(200), 1)
+list.insert(node(100),8)
+print("\nInserted values at first,middle,end")
 list.print()
