@@ -9,7 +9,7 @@ class linkedlist:
 
     def append(self, val):
         new_node = node(val)
-        if self.head is None:
+        if self.head == None:
             self.head = new_node
             return
         last = self.head
@@ -42,7 +42,19 @@ class linkedlist:
 
         prev.next = temp.next
 
-    def insert 
+        def insert(self, new_node, pos):
+            if pos == 0:
+                new_node.next = self.head
+                self.head = new_node
+                return
+            else:
+                p = 1
+                temp = self.head
+                while(p != pos - 1 and temp.next != None):
+                    temp = temp.next
+                    p += 1
+                new_node.next = temp.next
+                temp.next = new_node
 
     def print(self):
         current = self.head
