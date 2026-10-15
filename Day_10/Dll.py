@@ -14,7 +14,7 @@ class LinkedList:
         if temp:
             while temp.next:
                 temp=temp.next
-            temp.next=new_node
+            temp.next=new_node 
             new_node.prev=temp
         else:
             self.head=new_node
