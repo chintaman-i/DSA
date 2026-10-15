@@ -23,25 +23,30 @@ class linkedlist:
         if self.head is None:
             print("List is empty")
             return
-
+            
         temp = self.head
+        prev = None
         
         if temp.data == value:
-            self.head = self.head.next
-            return
+            if temp.next == self.head:
+                self.head = None
+            else:
+                last = self.head
+                while last.next != self.head:
+                    last = last.next
+                self.head = self.head.next
+                last.next = self.head
+        else:
+            while temp.data != value:
+                prev = temp
+                temp = temp.next
+                if temp == self.head:
+                    print("Value not found")
+                    return
+            prev.next = temp.next
 
-        prev = None
-        while temp:
-            if temp.data == value:
-                break
-            prev = temp
-            temp = temp.next
+        
 
-        if temp is None:
-            print("Value not found")
-            return
-
-        prev.next = temp.next
 
     def insert(self, new_node, pos):
         if pos == 1:
@@ -83,4 +88,8 @@ list.insert(node(10), 3)
 list.insert(node(200), 1)
 list.insert(node(100),8)
 print("\nInserted values at first,middle,end")
+list.print()
+
+list.delete(10)
+print("\nDelete An element")
 list.print()
