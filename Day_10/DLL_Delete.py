@@ -70,6 +70,8 @@ class LinkedList:
         if temp.prev:
             temp.prev.next = temp.next
 
+    def count():
+
 list1 = LinkedList()
 list1.append(Node(10))
 list1.append(Node(20))
