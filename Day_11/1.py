@@ -40,7 +40,7 @@ class stack:
             st1.push(node(temp.data))
             temp=temp.next
 
-    def compare(self):
+    #def compare(self):
 
 
 
